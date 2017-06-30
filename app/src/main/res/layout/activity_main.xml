@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rahul.picaption.ui.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout"
+        android:weightSum="1"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- Layout for Empty List -->
+
+
+
+        <TextView
+            android:id="@+id/text_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Don't You feel alone"
+            android:textSize="24sp"
+            android:textColor="@android:color/background_dark"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="224dp"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        android:foregroundGravity="bottom"
+        app:elevation="24dp"
+        app:srcCompat="@android:drawable/ic_menu_upload_you_tube"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="26dp" />
+
+    <ListView
+        android:id="@+id/caption_list"
+        android:layout_width="414dp"
+        android:layout_height="559dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout" />
+
+
+</android.support.constraint.ConstraintLayout>
